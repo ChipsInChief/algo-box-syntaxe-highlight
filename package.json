@@ -1,18 +1,19 @@
 {
-  "name": "algo-box-syntaxe-highlight",
-  "displayName": "Algo+box Syntaxe Highlight",
-  "description": "Coloration syntaxique pour langage algorithmique compatible Algobox (https://www.xm1math.net/algobox)",
+  "name": "algo-box-syntax-highlight",
+  "displayName": "Algo(box) Syntax Highlight",
+  "description": "Coloration syntaxique pour langage algorithmique compatible avec Algobox (https://www.xm1math.net/algobox)",
   "version": "0.0.1",
+  "publisher": "ChipsInChief",
   "engines": {
     "vscode": "^1.78.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages","Snippets"
   ],
   "contributes": {
     "languages": [{
       "id": "algo",
-      "aliases": ["Algo", "algo"],
+      "aliases": ["Algo", "algo", "Algorithme", "algorithme", "Algorithmique", "algorithmique"],
       "extensions": [".alg .algo"],
       "configuration": "./language-configuration.json"
     }],
