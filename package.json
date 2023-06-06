@@ -1,0 +1,25 @@
+{
+  "name": "algo-box-syntaxe-highlight",
+  "displayName": "Algo+box Syntaxe Highlight",
+  "description": "Coloration syntaxique pour langage algorithmique compatible Algobox (https://www.xm1math.net/algobox)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "algo",
+      "aliases": ["Algo", "algo"],
+      "extensions": [".alg .algo"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "algo",
+      "scopeName": "source.algo",
+      "path": "./syntaxes/algo.tmLanguage.json"
+    }]
+  }
+}
