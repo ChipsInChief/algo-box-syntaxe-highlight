@@ -1,32 +1,79 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Algo",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.algo",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.algo",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.algo",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.algo"
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Algo",
+  "patterns": [
+    {
+      "include": "#entities"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#variables"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.type.algo",
+          "match": "\\b(?i)(entier|r[eé]el|num[eé]rique|nombre|cha[iî]ne|caract[èe]re|bool[ée]en|tableau|liste|pile|file|ensemble)(s)?\\b"
+        },
+        {
+          "name": "keyword.control.algo",
+          "match": "\\b(?i)((d[eé]but_|fin([_ ])?)?(algorithme|si(non)?|pour|tant_que|tantque))|(variable(s)?|d[eé]but|fin|alors|allant[ _]de| [aà] |faire|suivant|fonction(s)?(_utilis[eé]e(s)?)?)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.python",
+          "match": "\\b(?i)(?:et|ou|non|div|mod|inf|sup|eg|different|infeg|supeg|ouexclusif)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.algo",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.algo",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric.algo",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+        },
+        {
+          "name": "constant.character.algo",
+          "match": "'(\\\\(?:\\\\|[\"'\\\\nrtbfve]|[0-7]{1,3}|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})|&(?:lt|#60);|[^\\\\'])'"
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.algo",
+          "match": "\\b(?!(?i)(en|est_du_type|prend_la_valeur)\\b)\\w+\\b"
+        }
+      ]
+    },
+    "entities": {
+      "patterns": [
+        {
+          "name": "entity.name.function.cs",
+          "match": "\\b(?i)(lire|[eé]crire|afficher)\\b"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.algo"
 }
