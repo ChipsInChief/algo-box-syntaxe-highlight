@@ -23,11 +23,11 @@
       "patterns": [
         {
           "name": "keyword.type.algo",
-          "match": "\\b(?i)(entier|r[eé]el|num[eé]rique|nombre|cha[iî]ne|caract[èe]re|bool[ée]en|tableau|liste|pile|file|ensemble)(s)?\\b"
+          "match": "\\b(?i)(entier|r[eé]el|num[eé]rique|cha[iî]ne|caract[èe]re|bool[ée]en|tableau|liste|pile|file|ensemble)(s)?\\b"
         },
         {
           "name": "keyword.control.algo",
-          "match": "\\b(?i)((d[eé]but_|fin([_ ])?)?(algorithme|si(non)?|pour|tant_que|tantque))|(variable(s)?|d[eé]but|fin|alors|allant[ _]de| [aà] |faire|suivant|fonction(s)?(_utilis[eé]e(s)?)?)\\b"
+          "match": "\\b(?i)((d[eé]but_|fin([_ ])?)?(algorithme|si(non)?|pour|tant[_ ]que|tantque))|(variable(s)?|d[eé]but|fin|alors|allant([ _])?de| [aà] |faire|suivant|par[_ ]pas[_ ]de|fonction(s)?(_utilis[eé]e(s)?)?)\\b"
         },
         {
           "name": "keyword.operator.logical.python",
@@ -62,7 +62,7 @@
       "patterns": [
         {
           "name": "variable.algo",
-          "match": "\\b(?!(?i)(en|est_du_type|prend_la_valeur)\\b)\\w+\\b"
+          "match": "\\b(?!(?i)(en|est_du_type)\\b)\\w+\\b"
         }
       ]
     },
