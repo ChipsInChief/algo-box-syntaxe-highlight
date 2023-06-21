@@ -16,6 +16,9 @@
     },
     {
       "include": "#variables"
+    },
+    {
+      "include": "#comments"
     }
   ],
   "repository": {
@@ -75,6 +78,20 @@
         {
           "name": "entity.name.function.cs",
           "match": "\\b(?i)(lire|[eé]crire|afficher)\\b"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.algo",
+          "begin": "//",
+          "end": "\n"
+        },
+        {
+          "name": "comment.block.algo",
+          "begin": "/[*]",
+          "end": "[*](/)"
         }
       ]
     }
