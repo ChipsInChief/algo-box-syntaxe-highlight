@@ -8,19 +8,39 @@
     "vscode": "^1.78.0"
   },
   "categories": [
-    "Programming Languages","Snippets"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
-    "languages": [{
-      "id": "algo",
-      "aliases": ["Algo", "algo", "Algorithme", "algorithme", "Algorithmique", "algorithmique"],
-      "extensions": [".alg .algo"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "algo",
-      "scopeName": "source.algo",
-      "path": "./syntaxes/algo.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "algo",
+        "aliases": [
+          "Algo",
+          "algo",
+          "Algorithme",
+          "algorithme",
+          "Algorithmique",
+          "algorithmique"
+        ],
+        "extensions": [
+          ".alg .algo"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "algo",
+        "scopeName": "source.algo",
+        "path": "./syntaxes/algo.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "algo",
+        "path": "./snippets/snippets.json"
+      }
+    ]
   }
 }

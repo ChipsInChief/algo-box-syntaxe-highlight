@@ -1,0 +1,76 @@
+{
+  "algorithme": {
+    "prefix": "algo",
+    "body": [
+      "ALGORITHME ${1:nom}",
+      "",
+      "VARIABLES",
+      "\t${2:nomVariable} en ${3|Caractères,Entiers,Réels,Booléens|}",
+      "\t$4",
+      "DÉBUT",
+      "\t$0",
+      "FIN"
+    ],
+    "description": "Insertion d'un bloc d'algorithme"
+  },
+  "variables": {
+    "prefix": "variables",
+    "body": ["VARIABLES", "\t${1:nomVariable} en ${2|Caractères,Entiers,Réels,Booléens|}"],
+    "description": "Insertion d'un bloc de déclaration de variables"
+  },
+  "variable": {
+    "prefix": "var",
+    "body": ["${1:nomVariable} en ${2|Caractères,Entiers,Réels,Booléens|}"],
+    "description": "Déclaration d'une nouvelle variable"
+  },
+  "tableau": {
+    "prefix": "tableau",
+    "body": ["TABLEAU ${1:nomTableau}[${2:Taille}] en ${3:|Caractères,Entiers,Réels,Booléens|}"],
+    "description": "Déclaration d'une nouveau tableau"
+  },
+  "début": {
+    "prefix": ["début", "debut"],
+    "body": ["DÉBUT", "\t$0", "FIN"],
+    "description": "Insertion d'un bloc \"DÉBUT/FIN\""
+  },
+  "commentaires": {
+    "prefix": "/*",
+    "body": ["/*", " * $0", " */"],
+    "description": "Insertion d'un bloc de commentaires"
+  },
+  "écrire": {
+    "prefix": ["écrire", "ecrire"],
+    "body": ["Écrire \"${1:chaîne de caractères}\""],
+    "description": "Insertion d'une instruction \"Écrire\""
+  },
+  "lire": {
+    "prefix": "lire",
+    "body": ["Lire ${1:variable}"],
+    "description": "Insertion d'une instruction \"Lire\""
+  },
+  "pour": {
+    "prefix": "pour",
+    "body": [
+      "Pour ${1:compteur} AllantDe ${2:valeurInitiale} À ${3:valeurFinale} ",
+      "\tParPasDe ${4:valeurDePas}",
+      "\t$0",
+      "$1 Suivant"
+    ],
+    "description": "Insertion d'un bloc de boucle \"Pour\""
+  },
+  "si": {
+    "prefix": "si",
+    "body": ["Si (${1:conditon}) Alors", "\t$0", "FinSi"],
+    "description": "Insertion d'un bloc \"Si\""
+  },
+  "si_sinon": {
+    "prefix": "sisinon",
+    "body": ["Si (${1:conditon}) Alors", "\t$0", "Sinon", "\t$2", "FinSi"],
+    "description": "Insertion d'un bloc \"si-sinon\""
+  },
+  "sinonsi": {
+    "prefix": "sinonsi",
+    "body": ["SinonSi (${1:conditon}) Alors", "\t$0"],
+    "description": "Insertion d'un bloc \"SinonSi\""
+  }
+}
