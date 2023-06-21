@@ -30,7 +30,7 @@
         },
         {
           "name": "keyword.control.algo",
-          "match": "\\b(?i)((d[eé]but_|fin([_ ])?)?(algorithme|si(non)?|pour|tant[_ ]que|tantque))|(variable(s)?|d[eé]but|fin|sinon(_)?si|alors|allant([ _])?de| [aà] |faire|suivant|par([_ ])?pas([_ ])?de|fonction(s)?(_utilis[eé]e(s)?)?)\\b"
+          "match": "\\b(?i)(sinon(_)?si)|((d[eé]but_|fin([_ ])?)?(algorithme|si(non)?|pour|tant[_ ]que|tantque))|(variable(s)?|d[eé]but|fin|alors|allant([ _])?de| [aà] |faire|suivant|par([_ ])?pas([_ ])?de|fonction(s)?(_utilis[eé]e(s)?)?)\\b"
         },
         {
           "name": "keyword.operator.logical.python",
