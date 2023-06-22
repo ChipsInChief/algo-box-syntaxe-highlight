@@ -25,7 +25,7 @@
   },
   "tableau": {
     "prefix": "tableau",
-    "body": ["TABLEAU ${1:nomTableau}[${2:Taille}] en ${3:|Caractères,Entiers,Réels,Booléens|}"],
+    "body": ["TABLEAU ${1:nomTableau}[${2:Taille}] en ${3|Caractères,Entiers,Réels,Booléens|}"],
     "description": "Déclaration d'une nouveau tableau"
   },
   "début": {
