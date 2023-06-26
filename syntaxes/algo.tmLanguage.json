@@ -77,7 +77,7 @@
       "patterns": [
         {
           "name": "entity.name.function.cs",
-          "match": "\\b(?i)(lire|[eé]crire|afficher)\\b"
+          "match": "\\b(?i)(lire|[eé]crire|afficher|redim)\\b"
         }
       ]
     },
