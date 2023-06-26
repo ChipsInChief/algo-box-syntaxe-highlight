@@ -2,7 +2,7 @@
   "algorithme": {
     "prefix": "algo",
     "body": [
-      "ALGORITHME ${1:nom}",
+      "ALGORITHME \"${1:nom}\"",
       "",
       "VARIABLES",
       "\t${2:nomVariable} en ${3|Caractères,Entiers,Réels,Booléens|}",
