@@ -24,7 +24,7 @@
           "algorithmique"
         ],
         "extensions": [
-          ".alg .algo"
+          ".algo"
         ],
         "configuration": "./language-configuration.json"
       }
