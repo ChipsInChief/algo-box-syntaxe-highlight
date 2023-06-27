@@ -26,7 +26,7 @@
       "patterns": [
         {
           "name": "keyword.type.algo",
-          "match": "\\b(?i)(entier|r[eé]el|num[eé]rique|cha[iî]ne|caract[èe]re|bool[ée]en|tableau|liste|pile|file|ensemble)(s)?\\b"
+          "match": "\\b(NOMBRE(S)?)|((?i)((entier|r[eé]el|num[eé]rique|cha[iî]ne|caract[èe]re|bool[ée]en|liste|pile|file|ensemble)(s)?)|tableau(x)?)\\b"
         },
         {
           "name": "keyword.control.algo",
