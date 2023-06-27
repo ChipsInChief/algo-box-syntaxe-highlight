@@ -1,7 +1,7 @@
 {
-  "name": "algo-box-syntax-highlight",
-  "displayName": "Algo(box) Syntax Highlight",
-  "description": "Coloration syntaxique pour langage algorithmique compatible avec Algobox (https://www.xm1math.net/algobox)",
+  "name": "algo-box-syntax-highlighter",
+  "displayName": "Algo{box} Syntax Highlighter 🖍",
+  "description": "Coloration syntaxique pour pseudo-code algorithmique (🇫🇷) compatible avec Algobox (https://www.xm1math.net/algobox)",
   "version": "0.0.1",
   "publisher": "ChipsInChief",
   "engines": {
@@ -18,10 +18,10 @@
         "aliases": [
           "Algo",
           "algo",
-          "Algorithme",
           "algorithme",
-          "Algorithmique",
-          "algorithmique"
+          "algorithmique",
+          "pseudo-code",
+          "pseudo code"
         ],
         "extensions": [
           ".algo"
