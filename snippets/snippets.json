@@ -1,5 +1,5 @@
 {
-  "algorithme": {
+  "Nouvel algorithme": {
     "prefix": "algo",
     "body": [
       "ALGORITHME \"${1:nom}\"",
@@ -11,44 +11,44 @@
       "\t$0",
       "FIN"
     ],
-    "description": "Insertion d'un bloc d'algorithme"
+    "description": "Insert un nouveau bloc d'algorithme."
   },
-  "variables": {
+  "Bloc \"VARIABLES\"": {
     "prefix": "variables",
     "body": ["VARIABLES", "\t${1:nomVariable} en ${2|Caractères,Entiers,Réels,Booléens|}"],
-    "description": "Insertion d'un bloc de déclaration de variables"
+    "description": "Insert un bloc de déclaration de variables."
   },
-  "variable": {
+  "Déclaration de variable": {
     "prefix": "var",
     "body": ["${1:nomVariable} en ${2|Caractères,Entiers,Réels,Booléens|}"],
-    "description": "Déclaration d'une nouvelle variable"
+    "description": "Insert une nouvelle déclaration de variable."
   },
-  "tableau": {
+  "Déclaration de tableau": {
     "prefix": "tableau",
     "body": ["TABLEAU ${1:nomTableau}[${2:Taille}] en ${3|Caractères,Entiers,Réels,Booléens|}"],
-    "description": "Déclaration d'une nouveau tableau"
+    "description": "Insert une nouvelle déclaration de tableau."
   },
-  "début": {
+  "Bloc \"DÉBUT/FIN\"": {
     "prefix": ["début", "debut"],
     "body": ["DÉBUT", "\t$0", "FIN"],
-    "description": "Insertion d'un bloc \"DÉBUT/FIN\""
+    "description": "Insert un nouveau bloc \"DÉBUT/FIN\" qui correspond au corps de l'algorithme."
   },
-  "commentaires": {
+  "Bloc de commentaires": {
     "prefix": "/*",
     "body": ["/*", " * $0", " */"],
-    "description": "Insertion d'un bloc de commentaires"
+    "description": "Insert un nouveau bloc de commentaires."
   },
-  "écrire": {
+  "Instruction \"Écrire\"": {
     "prefix": ["écrire", "ecrire"],
     "body": ["Écrire \"${1:chaîne de caractères}\""],
-    "description": "Insertion d'une instruction \"Écrire\""
+    "description": "Insert une nouvelle instruction \"Écrire\" permettant d'afficher un message à l'utilisateur."
   },
-  "lire": {
+  "Instruction \"Lire\"": {
     "prefix": "lire",
     "body": ["Lire ${1:variable}"],
-    "description": "Insertion d'une instruction \"Lire\""
+    "description": "Insert une nouvelle instruction \"Lire\" permettant de récupérer une valeur saisie par l'utilisateur."
   },
-  "pour": {
+  "Boucle \"Pour\"": {
     "prefix": "pour",
     "body": [
       "Pour ${1:compteur} AllantDe ${2:valeurInitiale} À ${3:valeurFinale} ",
@@ -56,21 +56,21 @@
       "\t$0",
       "$1 Suivant"
     ],
-    "description": "Insertion d'un bloc de boucle \"Pour\""
+    "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre en définissant la valeur du pas."
   },
-  "si": {
+  "Conditionnelle simple \"Si\"": {
     "prefix": "si",
     "body": ["Si (${1:conditon}) Alors", "\t$0", "FinSi"],
-    "description": "Insertion d'un bloc \"Si\""
+    "description": "Insert un nouveau bloc conditionnel \"Si\", sans alternative \"Sinon\"."
   },
-  "si_sinon": {
+  "Conditionnelle complète \"Si\" ... \"Sinon\"": {
     "prefix": "sisinon",
     "body": ["Si (${1:conditon}) Alors", "\t$0", "Sinon", "\t$2", "FinSi"],
-    "description": "Insertion d'un bloc \"si-sinon\""
+    "description": "Insert un nouveau bloc conditionnel complet \"Si\" avec son alternative \"Sinon\"."
   },
-  "sinonsi": {
+  "Alternative \"SinonSi\"": {
     "prefix": "sinonsi",
     "body": ["SinonSi (${1:conditon}) Alors", "\t$0"],
-    "description": "Insertion d'un bloc \"SinonSi\""
+    "description": "Insert une nouveau bloc conditionnel alternatif \"SinonSi\"."
   }
 }
