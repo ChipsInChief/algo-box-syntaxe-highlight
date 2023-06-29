@@ -79,7 +79,7 @@
   },
   "Conditionnelle complète \"Si\" ... \"Sinon\"": {
     "prefix": "sisinon",
-    "body": ["Si (${1:conditon}) Alors", "\t$0", "Sinon", "\t$2", "FinSi"],
+    "body": ["Si (${1:conditon}) Alors", "\t$2", "Sinon", "\t$0", "FinSi"],
     "description": "Insert un nouveau bloc conditionnel complet \"Si\" avec son alternative \"Sinon\"."
   },
   "Alternative \"SinonSi\"": {
