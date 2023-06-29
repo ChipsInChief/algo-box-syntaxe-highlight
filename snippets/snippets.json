@@ -15,7 +15,10 @@
   },
   "Bloc \"VARIABLES\"": {
     "prefix": "variables",
-    "body": ["VARIABLES", "\t${1:nomVariable} en ${2|Caractères,Entiers,Réels,Booléens|}"],
+    "body": [
+      "VARIABLES",
+      "\t${1:nomVariable} en ${2|Caractères,Entiers,Réels,Booléens|}"
+    ],
     "description": "Insert un bloc de déclaration de variables."
   },
   "Déclaration de variable": {
@@ -25,7 +28,9 @@
   },
   "Déclaration de tableau": {
     "prefix": "tableau",
-    "body": ["TABLEAU ${1:nomTableau}[${2:Taille}] en ${3|Caractères,Entiers,Réels,Booléens|}"],
+    "body": [
+      "TABLEAU ${1:nomTableau}[${2:Taille}] en ${3|Caractères,Entiers,Réels,Booléens|}"
+    ],
     "description": "Insert une nouvelle déclaration de tableau."
   },
   "Bloc \"DÉBUT/FIN\"": {
