@@ -1,6 +1,6 @@
 {
   "name": "algo-box-syntax-highlighter",
-  "displayName": "Algo{box} Syntax Highlighter 🖍",
+  "displayName": "Algo{box} Syntax Highlighter 🎨",
   "description": "Coloration syntaxique pour pseudo-code algorithmique (🇫🇷) compatible avec Algobox (https://www.xm1math.net/algobox)",
   "version": "0.0.1",
   "publisher": "ChipsInChief",
@@ -11,6 +11,7 @@
     "Programming Languages",
     "Snippets"
   ],
+  "icon": "images/icon.png",
   "contributes": {
     "languages": [
       {
