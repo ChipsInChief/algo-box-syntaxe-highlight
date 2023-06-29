@@ -48,8 +48,8 @@
     "body": ["Lire ${1:variable}"],
     "description": "Insert une nouvelle instruction \"Lire\" permettant de récupérer une valeur saisie par l'utilisateur."
   },
-  "Boucle \"Pour\"": {
-    "prefix": "pour",
+  "Boucle \"Pour\" avec pas": {
+    "prefix": "pourpas",
     "body": [
       "Pour ${1:compteur} AllantDe ${2:valeurInitiale} À ${3:valeurFinale} ",
       "\tParPasDe ${4:valeurDePas}",
@@ -57,6 +57,20 @@
       "$1 Suivant"
     ],
     "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre en définissant la valeur du pas."
+  },
+  "Boucle \"Pour\"": {
+    "prefix": "pour",
+    "body": [
+      "Pour ${1:compteur} AllantDe ${2:valeurInitiale} À ${3:valeurFinale} ",
+      "\t$0",
+      "$1 Suivant"
+    ],
+    "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre sans définir la valeur du pas."
+  },
+  "Valeur de pas \"Pour\"": {
+    "prefix": "pas",
+    "body": ["ParPasDe ${1:valeurDePas}"],
+    "description": "Insert une instruction permettant de définir la valeur du pas d'une boucle \"Pour\"."
   },
   "Conditionnelle simple \"Si\"": {
     "prefix": "si",
