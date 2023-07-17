@@ -15,7 +15,7 @@
   },
   "Bloc \"VARIABLES\"": {
     "prefix": "variables",
-    "body": ["VARIABLES", "\t"],
+    "body": ["VARIABLES", "\t$0"],
     "description": "Insert un bloc de déclaration de variables."
   },
   "Déclaration de variable": {
@@ -34,11 +34,6 @@
     "prefix": ["début", "debut"],
     "body": ["DÉBUT", "\t$0", "FIN"],
     "description": "Insert un nouveau bloc \"DÉBUT/FIN\" qui correspond au corps de l'algorithme."
-  },
-  "Bloc de commentaires": {
-    "prefix": "/*",
-    "body": ["/*", " * $0", " */"],
-    "description": "Insert un nouveau bloc de commentaires."
   },
   "Boucle \"Pour\" avec pas": {
     "prefix": "pourpas",
@@ -98,21 +93,5 @@
     "prefix": "redim",
     "body": ["Redim ${1:nomTableau}[${2:Taille}]"],
     "description": "Insert une nouvelle instruction \"Redim\" permettant de redimensionner un tableau en précisant sa nouvelle taille."
-  },
-  "Nouvel algorithme AlgoBox": {
-    "prefix": "abalgo",
-    "body": [
-      "// ALGORITHME \"${1:nom}\"",
-      "",
-      "FONCTIONS_UTILISEES",
-      "",
-      "VARIABLES",
-      "\t${2:nomVariable} EST_DU_TYPE ${3|NOMBRE,CHAINE,LISTE|}",
-      "\t",
-      "DEBUT_ALGORITHME",
-      "\t$0",
-      "FIN_ALGORITHME"
-    ],
-    "description": "Insert un nouveau bloc d'algorithme au format AlgoBox."
   }
 }

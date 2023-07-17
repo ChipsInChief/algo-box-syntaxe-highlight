@@ -1,0 +1,104 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "AlgoBox",
+  "patterns": [
+    {
+      "include": "#supports"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#comments"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.algobox",
+          "match": "\\b(?i)(((debut|fin)_)?(si|sinon)|alors)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.python",
+          "match": "\\b(?i)(et|ou)\\b"
+        },
+        {
+          "name": "keyword.operator.quantifier.regexp.algobox",
+          "match": "\\b(?i)(((debut|fin)_)?pour|allant_de| a )\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.algobox",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.algobox",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric.algobox",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+        },
+        {
+          "name": "constant.character.algobox",
+          "match": "'(\\\\(?:\\\\|[\"'\\\\nrtbfve]|[0-7]{1,3}|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})|&(?:lt|#60);|[^\\\\'])'"
+        },
+        {
+          "name": "constant.language.boolean.algobox",
+          "match": "\\b(?i)(vrai|faux)\\b"
+        },
+        {
+          "name": "constant.character.set.regexp.algobox",
+          "match": "\\b(?i)(((debut|fin)_)?tant_que|faire)\\b"
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.other.constant.cs",
+          "match": "\\b(?i)(est_du_type|afficher|affichercalcul|lire)\\b"
+        }
+      ]
+    },
+    "supports": {
+      "patterns": [
+        {
+          "name": "support.constant.color.algobox",
+          "match": "\\b(?i)(fonctions_utilisees|variables|(debut|fin)_algorithme)\\b"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.algobox",
+          "begin": "//",
+          "end": "\n"
+        },
+        {
+          "name": "comment.block.algobox",
+          "begin": "/[*]",
+          "end": "[*](/)"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.algobox"
+}

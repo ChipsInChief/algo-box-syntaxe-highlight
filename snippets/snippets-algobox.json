@@ -1,0 +1,92 @@
+{
+  "Nouvel algorithme": {
+    "prefix": "algo",
+    "body": [
+      "// ALGORITHME \"${1:nom}\"",
+      "",
+      "FONCTIONS_UTILISEES",
+      "",
+      "VARIABLES",
+      "\t${2:nomVariable} EST_DU_TYPE ${3|NOMBRE,CHAINE,LISTE|}",
+      "\t",
+      "DEBUT_ALGORITHME",
+      "\t$0",
+      "FIN_ALGORITHME"
+    ],
+    "description": "Insert un nouveau bloc d'algorithme."
+  },
+  "Bloc \"VARIABLES\"": {
+    "prefix": "variables",
+    "body": ["VARIABLES", "\t$0"],
+    "description": "Insert un bloc de déclaration de variables."
+  },
+  "Déclaration de variable": {
+    "prefix": "var",
+    "body": ["${1:nomVariable} EST_DU_TYPE ${2|NOMBRE,CHAINE,LISTE|}"],
+    "description": "Insert une nouvelle déclaration de variable."
+  },
+  "Bloc \"DEBUT/FIN\"": {
+    "prefix": ["début", "debut"],
+    "body": ["DEBUT_ALGORITHME", "\t$0", "FIN_ALGORITHME"],
+    "description": "Insert un nouveau bloc \"DEBUT_ALGORITHME/FIN_ALGORITHME\" qui correspond au corps de l'algorithme."
+  },
+  "Boucle \"POUR\"": {
+    "prefix": "pour",
+    "body": [
+      "POUR ${1:compteur} ALLANT_DE ${2:valeurInitiale} A ${3:valeurFinale} ",
+      "\tDEBUT_POUR",
+      "\t\t$0",
+      "\tFIN_POUR"
+    ],
+    "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre."
+  },
+  "Conditionnelle simple \"SI\"": {
+    "prefix": "si",
+    "body": ["SI (${1:conditon}) ALORS", "\tDEBUT_SI", "\t\t$0", "\tFIN_SI"],
+    "description": "Insert un nouveau bloc conditionnel \"SI\", sans alternative \"SINON\"."
+  },
+  "Conditionnelle complète \"SI\" ... \"SINON\"": {
+    "prefix": "sisinon",
+    "body": [
+      "SI (${1:conditon}) ALORS",
+      "\tDEBUT_SI",
+      "\t\t$2",
+      "\tFIN_SI",
+      "\tSINON",
+      "\t\tDEBUT_SINON",
+      "\t\t\t$0",
+      "\t\tFIN_SINON"
+    ],
+    "description": "Insert un nouveau bloc conditionnel complet \"SI\" avec son alternative \"SINON\"."
+  },
+  "Instruction \"AFFICHER\" message": {
+    "prefix": "afficher_m",
+    "body": ["AFFICHER \"${1:chaîne de caractères}\""],
+    "description": "Insert une nouvelle instruction \"AFFICHER\" permettant d'afficher un message à l'utilisateur, sans retour à la ligne."
+  },
+  "Instruction \"AFFICHER*\" message": {
+    "prefix": "afficher_m*",
+    "body": ["AFFICHER* \"${1:chaîne de caractères}\""],
+    "description": "Insert une nouvelle instruction \"AFFICHER*\" permettant d'afficher un message à l'utilisateur, avec un retour à la ligne."
+  },
+  "Instruction \"AFFICHER\" variable": {
+    "prefix": "afficher_v",
+    "body": ["AFFICHER ${1:nomVariable}"],
+    "description": "Insert une nouvelle instruction \"AFFICHER\" permettant d'afficher le contenu d'une variable à l'utilisateur, sans retour à la ligne."
+  },
+  "Instruction \"AFFICHER*\" variable": {
+    "prefix": "afficher_v*",
+    "body": ["AFFICHER* ${1:nomVariable}"],
+    "description": "Insert une nouvelle instruction \"AFFICHER*\" permettant d'afficher le contenu d'une variable à l'utilisateur, avec un retour à la ligne."
+  },
+  "Instruction \"AFFICHERCALCUL\"": {
+    "prefix": "afficher_c",
+    "body": ["AFFICHERCALCUL ${1:calcul}"],
+    "description": "Insert une nouvelle instruction \"AFFICHERCALCUL\" permettant d'afficher le résultat d'un calcul à l'utilisateur, sans retour à la ligne."
+  },
+  "Instruction \"AFFICHERCALCUL*\"": {
+    "prefix": "afficher_c*",
+    "body": ["AFFICHERCALCUL* ${1:calcul}"],
+    "description": "Insert une nouvelle instruction \"AFFICHERCALCUL*\" permettant d'afficher le résultat d'un calcul à l'utilisateur, avec un retour à la ligne."
+  }
+}
