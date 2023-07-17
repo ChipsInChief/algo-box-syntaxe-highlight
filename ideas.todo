@@ -1,0 +1,4 @@
+☐ Intégrer un plugin Prettier pour la mise en page
+  https://medium.com/@fvictorio/how-to-write-a-plugin-for-prettier-a0d98c845e70
+☐ Définir les valeurs de coloration pour ne pas être dépendant des thèmes de l'utilisateur ?
+  https://github.com/microsoft/vscode/blob/main/extensions/theme-defaults/themes/dark_plus.json

@@ -1,6 +1,6 @@
 {
   "Nouvel algorithme": {
-    "prefix": "algo",
+    "prefix": "Algo",
     "body": [
       "ALGORITHME \"${1:nom}\"",
       "",
@@ -14,34 +14,29 @@
     "description": "Insert un nouveau bloc d'algorithme."
   },
   "Bloc \"VARIABLES\"": {
-    "prefix": "variables",
-    "body": ["VARIABLES", "\t"],
+    "prefix": "Variables",
+    "body": ["VARIABLES", "\t$0"],
     "description": "Insert un bloc de déclaration de variables."
   },
   "Déclaration de variable": {
-    "prefix": "var",
+    "prefix": "Var",
     "body": ["${1:nomVariable} en ${2|Caractères,Entiers,Réels,Booléens|}"],
     "description": "Insert une nouvelle déclaration de variable."
   },
   "Déclaration de tableau": {
-    "prefix": "tableau",
+    "prefix": "Tableau",
     "body": [
       "TABLEAU ${1:nomTableau}[${2:Taille}] en ${3|Caractères,Entiers,Réels,Booléens|}"
     ],
     "description": "Insert une nouvelle déclaration de tableau."
   },
   "Bloc \"DÉBUT/FIN\"": {
-    "prefix": ["début", "debut"],
+    "prefix": ["Début", "Debut"],
     "body": ["DÉBUT", "\t$0", "FIN"],
     "description": "Insert un nouveau bloc \"DÉBUT/FIN\" qui correspond au corps de l'algorithme."
   },
-  "Bloc de commentaires": {
-    "prefix": "/*",
-    "body": ["/*", " * $0", " */"],
-    "description": "Insert un nouveau bloc de commentaires."
-  },
   "Boucle \"Pour\" avec pas": {
-    "prefix": "pourpas",
+    "prefix": "Pour avec pas",
     "body": [
       "Pour ${1:compteur} AllantDe ${2:valeurInitiale} À ${3:valeurFinale} ",
       "\tParPasDe ${4:valeurDePas}",
@@ -51,7 +46,7 @@
     "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre en définissant la valeur du pas."
   },
   "Boucle \"Pour\"": {
-    "prefix": "pour",
+    "prefix": "Pour",
     "body": [
       "Pour ${1:compteur} AllantDe ${2:valeurInitiale} À ${3:valeurFinale} ",
       "\t$0",
@@ -60,59 +55,43 @@
     "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre sans définir la valeur du pas."
   },
   "Valeur de pas \"Pour\"": {
-    "prefix": "pas",
+    "prefix": "Par pas",
     "body": ["ParPasDe ${1:valeurDePas}"],
     "description": "Insert une instruction permettant de définir la valeur du pas d'une boucle \"Pour\"."
   },
-  "Conditionnelle simple \"Si\"": {
-    "prefix": "si",
+  "Conditionnelle simple": {
+    "prefix": "Si",
     "body": ["Si (${1:conditon}) Alors", "\t$0", "FinSi"],
     "description": "Insert un nouveau bloc conditionnel \"Si\", sans alternative \"Sinon\"."
   },
-  "Conditionnelle complète \"Si\" ... \"Sinon\"": {
-    "prefix": "sisinon",
+  "Conditionnelle complète": {
+    "prefix": "Si ... Sinon",
     "body": ["Si (${1:conditon}) Alors", "\t$2", "Sinon", "\t$0", "FinSi"],
     "description": "Insert un nouveau bloc conditionnel complet \"Si\" avec son alternative \"Sinon\"."
   },
   "Alternative \"SinonSi\"": {
-    "prefix": "sinonsi",
+    "prefix": "SinonSi",
     "body": ["SinonSi (${1:conditon}) Alors", "\t$0"],
     "description": "Insert une nouveau bloc conditionnel alternatif \"SinonSi\"."
   },
   "Instruction \"Écrire\"": {
-    "prefix": ["écrire", "ecrire"],
+    "prefix": ["Écrire", "Ecrire"],
     "body": ["Écrire \"${1:chaîne de caractères}\""],
     "description": "Insert une nouvelle instruction \"Écrire\" permettant d'afficher un message à l'utilisateur."
   },
   "Instruction \"Lire\" dans une variable": {
-    "prefix": "lirevar",
+    "prefix": "Lire Var",
     "body": ["Lire ${1:nomVariable}"],
     "description": "Insert une nouvelle instruction \"Lire\" permettant de récupérer, dans une variable, une valeur saisie par l'utilisateur."
   },
   "Instruction \"Lire\" dans un tableau": {
-    "prefix": "liretab",
+    "prefix": "Lire Tab",
     "body": ["Lire ${1:nomTableau}[${2|indice,0,1,2,3,4,5,6,7,8,9,10,...|}]"],
     "description": "Insert une nouvelle instruction \"Lire\" permettant de récupérer, dans un tableau à l'indice précisé entre \"[]\", une valeur saisie par l'utilisateur."
   },
   "Instruction \"Redim\"": {
-    "prefix": "redim",
+    "prefix": "Redim",
     "body": ["Redim ${1:nomTableau}[${2:Taille}]"],
     "description": "Insert une nouvelle instruction \"Redim\" permettant de redimensionner un tableau en précisant sa nouvelle taille."
-  },
-  "Nouvel algorithme AlgoBox": {
-    "prefix": "abalgo",
-    "body": [
-      "// ALGORITHME \"${1:nom}\"",
-      "",
-      "FONCTIONS_UTILISEES",
-      "",
-      "VARIABLES",
-      "\t${2:nomVariable} EST_DU_TYPE ${3|NOMBRE,CHAINE,LISTE|}",
-      "\t",
-      "DEBUT_ALGORITHME",
-      "\t$0",
-      "FIN_ALGORITHME"
-    ],
-    "description": "Insert un nouveau bloc d'algorithme au format AlgoBox."
   }
 }
