@@ -10,6 +10,7 @@
       "\t${2:nomVariable} EST_DU_TYPE ${3|NOMBRE,CHAINE,LISTE|}",
       "\t",
       "DEBUT_ALGORITHME",
+      "\t// Votre algorithme ici ! 🤓",
       "\t$0",
       "FIN_ALGORITHME"
     ],
@@ -27,7 +28,12 @@
   },
   "Bloc \"DEBUT/FIN\"": {
     "prefix": ["Début", "Debut"],
-    "body": ["DEBUT_ALGORITHME", "\t$0", "FIN_ALGORITHME"],
+    "body": [
+      "DEBUT_ALGORITHME",
+      "\t// Votre algorithme ici ! 🤓",
+      "\t$0",
+      "FIN_ALGORITHME"
+    ],
     "description": "Insert un nouveau bloc \"DEBUT_ALGORITHME/FIN_ALGORITHME\" qui correspond au corps de l'algorithme."
   },
   "Boucle \"POUR\"": {
@@ -35,6 +41,7 @@
     "body": [
       "POUR ${1:compteur} ALLANT_DE ${2:valeurInitiale} A ${3:valeurFinale} ",
       "\tDEBUT_POUR",
+      "\t\t// Les instructions qui seront réalisées de ${2:valeurInitiale} à ${3:valeurFinale} fois, en comptant de 1 en 1.",
       "\t\t$0",
       "\tFIN_POUR"
     ],
@@ -42,18 +49,37 @@
   },
   "Conditionnelle simple": {
     "prefix": "Si",
-    "body": ["SI (${1:conditon}) ALORS", "\tDEBUT_SI", "\t\t$0", "\tFIN_SI"],
+    "body": [
+      "SI (${1:condition}) ALORS",
+      "\tDEBUT_SI",
+      "\t\t// Instructions si la condition \"${1:condition}\" est vérifiée.",
+      "\t\t$0",
+      "\tFIN_SI"
+    ],
     "description": "Insert un nouveau bloc conditionnel \"SI\", sans alternative \"SINON\"."
+  },
+  "Alternative \"Sinon\"": {
+    "prefix": "Sinon",
+    "body": [
+      "SINON",
+      "\tDEBUT_SINON",
+      "\t\t// Instructions dans tous les autres cas.",
+      "\t\t$0",
+      "\tFIN_SINON"
+    ],
+    "description": "Insert un bloc conditionnel alternatif \"SINON\"."
   },
   "Conditionnelle complète": {
     "prefix": "Si ... Sinon",
     "body": [
-      "SI (${1:conditon}) ALORS",
+      "SI (${1:condition}) ALORS",
       "\tDEBUT_SI",
+      "\t\t// Instructions si la condition \"${1:condition}\" est vérifiée.",
       "\t\t$2",
       "\tFIN_SI",
       "\tSINON",
       "\t\tDEBUT_SINON",
+      "\t\t\t// Instructions dans tous les autres cas.",
       "\t\t\t$0",
       "\t\tFIN_SINON"
     ],
