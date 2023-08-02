@@ -8,6 +8,7 @@
       "\t${2:nomVariable} en ${3|Caractères,Entiers,Réels,Booléens|}",
       "\t$4",
       "DÉBUT",
+      "\t// Votre algorithme ici ! 🤓",
       "\t$0",
       "FIN"
     ],
@@ -32,7 +33,7 @@
   },
   "Bloc \"DÉBUT/FIN\"": {
     "prefix": ["Début", "Debut"],
-    "body": ["DÉBUT", "\t$0", "FIN"],
+    "body": ["DÉBUT", "\t// Votre algorithme ici ! 🤓", "\t$0", "FIN"],
     "description": "Insert un nouveau bloc \"DÉBUT/FIN\" qui correspond au corps de l'algorithme."
   },
   "Boucle \"Pour\" avec pas": {
@@ -40,6 +41,7 @@
     "body": [
       "Pour ${1:compteur} AllantDe ${2:valeurInitiale} À ${3:valeurFinale} ",
       "\tParPasDe ${4:valeurDePas}",
+      "\t// Les instructions qui seront réalisées de ${2:valeurInitiale} à ${3:valeurFinale} fois, en comptant de ${4:valeurDePas} en ${4:valeurDePas}.",
       "\t$0",
       "$1 Suivant"
     ],
@@ -49,10 +51,11 @@
     "prefix": "Pour",
     "body": [
       "Pour ${1:compteur} AllantDe ${2:valeurInitiale} À ${3:valeurFinale} ",
+      "\t// Les instructions qui seront réalisées de ${2:valeurInitiale} à ${3:valeurFinale} fois, en comptant de 1 en 1.",
       "\t$0",
       "$1 Suivant"
     ],
-    "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre sans définir la valeur du pas."
+    "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre sans définir la valeur du pas (valeur de 1 par défaut)."
   },
   "Valeur de pas \"Pour\"": {
     "prefix": "Par pas",
@@ -61,18 +64,40 @@
   },
   "Conditionnelle simple": {
     "prefix": "Si",
-    "body": ["Si (${1:conditon}) Alors", "\t$0", "FinSi"],
+    "body": [
+      "Si (${1:condition}) Alors",
+      "\t// Instructions si la condition \"${1:condition}\" est vérifiée.",
+      "\t$0",
+      "FinSi"
+    ],
     "description": "Insert un nouveau bloc conditionnel \"Si\", sans alternative \"Sinon\"."
   },
   "Conditionnelle complète": {
     "prefix": "Si ... Sinon",
-    "body": ["Si (${1:conditon}) Alors", "\t$2", "Sinon", "\t$0", "FinSi"],
+    "body": [
+      "Si (${1:condition}) Alors",
+      "\t// Instructions si la condition \"${1:condition}\" est vérifiée.",
+      "\t$2",
+      "Sinon",
+      "\t// Instructions dans tous les autres cas.",
+      "\t$0",
+      "FinSi"
+    ],
     "description": "Insert un nouveau bloc conditionnel complet \"Si\" avec son alternative \"Sinon\"."
   },
   "Alternative \"SinonSi\"": {
     "prefix": "SinonSi",
-    "body": ["SinonSi (${1:conditon}) Alors", "\t$0"],
-    "description": "Insert une nouveau bloc conditionnel alternatif \"SinonSi\"."
+    "body": [
+      "SinonSi (${1:condition}) Alors",
+      "\t// Instructions si la condition \"${1:condition}\" est vérifiée.",
+      "\t$0"
+    ],
+    "description": "Insert un bloc conditionnel alternatif \"SinonSi\"."
+  },
+  "Alternative \"Sinon\"": {
+    "prefix": "Sinon",
+    "body": ["Sinon", "\t// Instructions dans tous les autres cas.", "\t$0"],
+    "description": "Insert un bloc conditionnel alternatif \"Sinon\"."
   },
   "Instruction \"Écrire\"": {
     "prefix": ["Écrire", "Ecrire"],
