@@ -1,5 +1,6 @@
 {
   "Nouvel algorithme": {
+    "isFileTemplate": true,
     "prefix": "Algo",
     "body": [
       "ALGORITHME \"${1:nom}\"",
