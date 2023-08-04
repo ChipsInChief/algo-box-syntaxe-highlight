@@ -1,25 +1,67 @@
 {
-  "name": "algo-box-syntaxe-highlight",
-  "displayName": "Algo+box Syntaxe Highlight",
-  "description": "Coloration syntaxique pour langage algorithmique compatible Algobox (https://www.xm1math.net/algobox)",
+  "name": "algo-box-syntax-highlighter",
+  "displayName": "Algo{box} Syntax Highlighter 🖍",
+  "description": "Coloration syntaxique pour pseudo-code algorithmique (🇫🇷) compatible avec Algobox (https://www.xm1math.net/algobox)",
   "version": "0.0.1",
+  "publisher": "ChipsInChief",
   "engines": {
     "vscode": "^1.78.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
+  "icon": "images/icon.png",
   "contributes": {
-    "languages": [{
-      "id": "algo",
-      "aliases": ["Algo", "algo"],
-      "extensions": [".alg .algo"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "algo",
-      "scopeName": "source.algo",
-      "path": "./syntaxes/algo.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "algo",
+        "aliases": [
+          "Algo",
+          "algo",
+          "algorithme",
+          "algorithmique",
+          "pseudo-code",
+          "pseudo code"
+        ],
+        "extensions": [
+          ".algo"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "algobox",
+        "aliases": [
+          "AlgoBox",
+          "algobox"
+        ],
+        "extensions": [
+          ".algob"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "algo",
+        "scopeName": "source.algo",
+        "path": "./syntaxes/algo.tmLanguage.json"
+      },
+      {
+        "language": "algobox",
+        "scopeName": "source.algobox",
+        "path": "./syntaxes/algobox.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "algo",
+        "path": "./snippets/snippets-algo.json"
+      },
+      {
+        "language": "algobox",
+        "path": "./snippets/snippets-algobox.json"
+      }
+    ]
   }
 }

@@ -1,65 +1,90 @@
-# algo-box-syntaxe-highlight README
+# Algo`{box}` Syntax Highlighter 🖍
 
-This is the README for your extension "algo-box-syntaxe-highlight". After writing up a brief description, we recommend including the following sections.
+Algo`{box}` Syntax Highlighter est une extension permettant la **coloration syntaxique** du langage algorithmique (🇫🇷), et **compatible** avec la syntaxe des instructions **[Algobox](https://www.xm1math.net/algobox)**.
 
-## Features
+Cette extension met également à disposition des **modèles de fichiers** et un **ensemble d'extrait de code** ([snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)) afin de faciliter et d'homogénéiser l'écriture de l'algorithmique, tout en facilitant son apprentissage.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Fonctionnalités 🧰
 
-For example if there is an image subfolder under your extension project workspace:
+Cette extension apporte deux nouveaux langages : `Algo` et `AlgoBox`.
 
-\!\[feature X\]\(images/feature-x.png\)
+* Coloration syntaxique pour langage algorithmique (`.algo`)
+* Coloration syntaxique pour instructions AlgoBox (`.algobox`)
+* Extraits de code pour langage algorithmique
+* Extraits de code pour instructions `AlgoBox`
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+<!-- ## Installation ⚙️ -->
 
-## Requirements
+## Utilisation 🧑‍💻
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### `Algo`
 
-## Extension Settings
+#### Coloration syntaxique `Algo`
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Pour utiliser la coloration syntaxique du langage algorithmique, créez simplement un nouveau fichier et sélectionnez le langage `Algo` :
 
-For example:
+![Création d'un nouveau fichier avec le langage `Algo`](images/documentation/algo/01.1-nouveau-fichier.gif)
 
-This extension contributes the following settings:
+Ou sélectionnez le langage directement depuis un fichier ouvert :
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+![Sélection langage `Algo`](images/documentation/algo/01.2-selection-langage.gif)
 
-## Known Issues
+À l'ouverture de fichiers dont l'extension est `.algo`, Visual Studio Code détecte automatiquement cette coloration syntaxique.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+#### Modèles de fichier `Algo`
 
-## Release Notes
+Vous pouvez démarrer un nouveau fichier `Algo` en utilisant le modèle disponible.
+Pour ce faire, créez un nouveau fichier et sélectionnez `remplissez avec un modèle` puis `Algo`.
 
-Users appreciate release notes as you update your extension.
+![Modèle de fichier `Algo`](images/documentation/algo/02-modele-fichier.gif)
 
-### 1.0.0
+#### Extraits de code `Algo`
 
-Initial release of ...
+Lorsque le langage `Algo` est sélectionné, les extraits de code spécifiques sont disponibles.
 
-### 1.0.1
+Tapez simplement le début des instructions algorithmique pour qu'une sélection des extraits de code s'activent, comme par exemple `si`, `pour`, `var` :
 
-Fixed issue #.
+![Exemple de snippet `Algo`](images/documentation/algo/03-snippet.gif)
 
-### 1.1.0
+### `AlgoBox`
 
-Added features X, Y, and Z.
+#### Coloration syntaxique `AlgoBox`
 
----
+Créez simplement un nouveau fichier et sélectionnez le langage `AlgoBox` :
 
-## Working with Markdown
+![Création d'un nouveau fichier avec le langage `AlgoBox`](images/documentation/algobox/01.1-nouveau-fichier.gif)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+Ou sélectionnez le langage directement depuis un fichier ouvert :
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+![Sélection langage `AlgoBox`](images/documentation/algobox/01.2-selection-langage.gif)
 
-## For more information
+À l'ouverture de fichiers dont l'extension est `.algobox`, Visual Studio Code détecte automatiquement cette coloration syntaxique.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+#### Modèles de fichier `AlgoBox`
 
-**Enjoy!**
+Vous pouvez démarrer un nouveau fichier `AlgoBox` en utilisant le modèle disponible.
+Pour ce faire, créez un nouveau fichier et sélectionnez `remplissez avec un modèle` puis `AlgoBox`.
+
+![Modèle de fichier `AlgoBox`](images/documentation/algobox/02-snippet.gif)
+
+#### Extraits de code `AlgoBox`
+
+Comme pour le langage `Algo`, lorsque le langage `AlgoBox` est sélectionné, des extraits de code spécifiques sont disponibles.
+
+Tapez simplement le début des instructions `AlgoBox` pour qu'une sélection des extraits de code s'activent, comme par exemple `si`, `pour`, `var` :
+
+![Exemple de snippet `AlgoBox`](images/documentation/algobox/03-snippet.gif)
+
+<!-- ## À venir 🚀 -->
+
+## Attributions 📚
+
+Syntaxe basée sur :
+
+* [Cours d'algorithmique](http://cours.pise.info/algo/index.htm) de Christophe DARMANGEAT
+* [Algobox](https://www.xm1math.net/algobox)
+
+Extension inspirée de :
+
+* [algo](https://marketplace.visualstudio.com/items?itemName=jponcy.algo-tact) de [jponcy](https://marketplace.visualstudio.com/publishers/jponcy)
+* [Pic Algo](https://marketplace.visualstudio.com/items?itemName=PierrickDelrieu.pic-algo) de [Pierrick Delrieu](https://marketplace.visualstudio.com/publishers/PierrickDelrieu)

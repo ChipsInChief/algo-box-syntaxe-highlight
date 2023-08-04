@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Algo",
+  "name": "AlgoBox",
   "patterns": [
     {
-      "include": "#entities"
+      "include": "#supports"
     },
     {
       "include": "#keywords"
@@ -25,26 +25,26 @@
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.type.algo",
-          "match": "\\b(NOMBRE(S)?)|((?i)((entier|r[eé]el|num[eé]rique|cha[iî]ne|caract[èe]re|bool[ée]en|liste|pile|file|ensemble)(s)?)|tableau(x)?)\\b"
-        },
-        {
-          "name": "keyword.control.algo",
-          "match": "\\b(?i)(sinon(_)?si)|((d[eé]but_|fin([_ ])?)?(algorithme|si(non)?|pour|tant[_ ]que|tantque))|(variable(s)?|d[eé]but|fin|alors|allant([ _])?de| [aà] |faire|suivant|par([_ ])?pas([_ ])?de|fonction(s)?(_utilis[eé]e(s)?)?)\\b"
+          "name": "keyword.control.algobox",
+          "match": "\\b(?i)(((debut|fin)_)?(si|sinon)|alors)\\b"
         },
         {
           "name": "keyword.operator.logical.python",
-          "match": "\\b(?i)(?:et|ou|non|div|mod|inf|sup|eg|different|infeg|supeg|ouexclusif)\\b"
+          "match": "\\b(?i)(et|ou)\\b"
+        },
+        {
+          "name": "keyword.operator.quantifier.regexp.algobox",
+          "match": "\\b(?i)(((debut|fin)_)?pour|allant_de| a )\\b"
         }
       ]
     },
     "strings": {
-      "name": "string.quoted.double.algo",
+      "name": "string.quoted.double.algobox",
       "begin": "\"",
       "end": "\"",
       "patterns": [
         {
-          "name": "constant.character.escape.algo",
+          "name": "constant.character.escape.algobox",
           "match": "\\\\."
         }
       ]
@@ -52,49 +52,53 @@
     "constants": {
       "patterns": [
         {
-          "name": "constant.numeric.algo",
+          "name": "constant.numeric.algobox",
           "match": "\\b\\d+(\\.\\d+)?\\b"
         },
         {
-          "name": "constant.character.algo",
+          "name": "constant.character.algobox",
           "match": "'(\\\\(?:\\\\|[\"'\\\\nrtbfve]|[0-7]{1,3}|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})|&(?:lt|#60);|[^\\\\'])'"
         },
         {
-          "name": "constant.language.boolean.algo",
+          "name": "constant.language.boolean.algobox",
           "match": "\\b(?i)(vrai|faux)\\b"
+        },
+        {
+          "name": "constant.character.set.regexp.algobox",
+          "match": "\\b(?i)(((debut|fin)_)?tant_que|faire)\\b"
         }
       ]
     },
     "variables": {
       "patterns": [
         {
-          "name": "variable.algo",
-          "match": "\\b(?!(?i)(en|est_du_type)\\b)\\w+\\b"
+          "name": "variable.other.constant.cs",
+          "match": "\\b(?i)(est_du_type|afficher|affichercalcul|lire)\\b"
         }
       ]
     },
-    "entities": {
+    "supports": {
       "patterns": [
         {
-          "name": "entity.name.function.cs",
-          "match": "\\b(?i)(lire|[eé]crire|afficher|redim)\\b"
+          "name": "support.constant.color.algobox",
+          "match": "\\b(?i)(fonctions_utilisees|variables|(debut|fin)_algorithme)\\b"
         }
       ]
     },
     "comments": {
       "patterns": [
         {
-          "name": "comment.line.double-slash.algo",
+          "name": "comment.line.double-slash.algobox",
           "begin": "//",
           "end": "\n"
         },
         {
-          "name": "comment.block.algo",
+          "name": "comment.block.algobox",
           "begin": "/[*]",
           "end": "[*](/)"
         }
       ]
     }
   },
-  "scopeName": "source.algo"
+  "scopeName": "source.algobox"
 }
