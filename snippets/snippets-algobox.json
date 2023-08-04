@@ -15,17 +15,17 @@
       "\t$0",
       "FIN_ALGORITHME"
     ],
-    "description": "Insert un nouveau bloc d'algorithme."
+    "description": "Insère un nouveau bloc d'algorithme."
   },
   "Bloc \"VARIABLES\"": {
     "prefix": "Variables",
     "body": ["VARIABLES", "\t$0"],
-    "description": "Insert un bloc de déclaration de variables."
+    "description": "Insère un bloc de déclaration de variables."
   },
   "Déclaration de variable": {
     "prefix": "Var",
     "body": ["${1:nomVariable} EST_DU_TYPE ${2|NOMBRE,CHAINE,LISTE|}"],
-    "description": "Insert une nouvelle déclaration de variable."
+    "description": "Insère une nouvelle déclaration de variable."
   },
   "Bloc \"DEBUT/FIN\"": {
     "prefix": ["Début", "Debut"],
@@ -35,7 +35,7 @@
       "\t$0",
       "FIN_ALGORITHME"
     ],
-    "description": "Insert un nouveau bloc \"DEBUT_ALGORITHME/FIN_ALGORITHME\" qui correspond au corps de l'algorithme."
+    "description": "Insère un nouveau bloc \"DEBUT_ALGORITHME/FIN_ALGORITHME\" qui correspond au corps de l'algorithme."
   },
   "Boucle \"POUR\"": {
     "prefix": "Pour",
@@ -46,7 +46,7 @@
       "\t\t$0",
       "\tFIN_POUR"
     ],
-    "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre."
+    "description": "Insère une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre."
   },
   "Conditionnelle simple": {
     "prefix": "Si",
@@ -57,7 +57,7 @@
       "\t\t$0",
       "\tFIN_SI"
     ],
-    "description": "Insert un nouveau bloc conditionnel \"SI\", sans alternative \"SINON\"."
+    "description": "Insère un nouveau bloc conditionnel \"SI\", sans alternative \"SINON\"."
   },
   "Alternative \"Sinon\"": {
     "prefix": "Sinon",
@@ -68,7 +68,7 @@
       "\t\t$0",
       "\tFIN_SINON"
     ],
-    "description": "Insert un bloc conditionnel alternatif \"SINON\"."
+    "description": "Insère un bloc conditionnel alternatif \"SINON\"."
   },
   "Conditionnelle complète": {
     "prefix": "Si ... Sinon",
@@ -84,41 +84,41 @@
       "\t\t\t$0",
       "\t\tFIN_SINON"
     ],
-    "description": "Insert un nouveau bloc conditionnel complet \"SI\" avec son alternative \"SINON\"."
+    "description": "Insère un nouveau bloc conditionnel complet \"SI\" avec son alternative \"SINON\"."
   },
   "Instruction \"AFFICHER\" message": {
     "prefix": "Afficher Mess",
     "body": ["AFFICHER \"${1:chaîne de caractères}\""],
-    "description": "Insert une nouvelle instruction \"AFFICHER\" permettant d'afficher un message à l'utilisateur, sans retour à la ligne."
+    "description": "Insère une nouvelle instruction \"AFFICHER\" permettant d'afficher un message à l'utilisateur, sans retour à la ligne."
   },
   "Instruction \"AFFICHER*\" message": {
     "prefix": "Afficher Mess*",
     "body": ["AFFICHER* \"${1:chaîne de caractères}\""],
-    "description": "Insert une nouvelle instruction \"AFFICHER*\" permettant d'afficher un message à l'utilisateur, avec un retour à la ligne."
+    "description": "Insère une nouvelle instruction \"AFFICHER*\" permettant d'afficher un message à l'utilisateur, avec un retour à la ligne."
   },
   "Instruction \"AFFICHER\" variable": {
     "prefix": "Afficher Var",
     "body": ["AFFICHER ${1:nomVariable}"],
-    "description": "Insert une nouvelle instruction \"AFFICHER\" permettant d'afficher le contenu d'une variable à l'utilisateur, sans retour à la ligne."
+    "description": "Insère une nouvelle instruction \"AFFICHER\" permettant d'afficher le contenu d'une variable à l'utilisateur, sans retour à la ligne."
   },
   "Instruction \"AFFICHER*\" variable": {
     "prefix": "Afficher Var*",
     "body": ["AFFICHER* ${1:nomVariable}"],
-    "description": "Insert une nouvelle instruction \"AFFICHER*\" permettant d'afficher le contenu d'une variable à l'utilisateur, avec un retour à la ligne."
+    "description": "Insère une nouvelle instruction \"AFFICHER*\" permettant d'afficher le contenu d'une variable à l'utilisateur, avec un retour à la ligne."
   },
   "Instruction \"AFFICHERCALCUL\"": {
     "prefix": "Afficher Calc",
     "body": ["AFFICHERCALCUL ${1:calcul}"],
-    "description": "Insert une nouvelle instruction \"AFFICHERCALCUL\" permettant d'afficher le résultat d'un calcul à l'utilisateur, sans retour à la ligne."
+    "description": "Insère une nouvelle instruction \"AFFICHERCALCUL\" permettant d'afficher le résultat d'un calcul à l'utilisateur, sans retour à la ligne."
   },
   "Instruction \"AFFICHERCALCUL*\"": {
     "prefix": "Afficher Calc*",
     "body": ["AFFICHERCALCUL* ${1:calcul}"],
-    "description": "Insert une nouvelle instruction \"AFFICHERCALCUL*\" permettant d'afficher le résultat d'un calcul à l'utilisateur, avec un retour à la ligne."
+    "description": "Insère une nouvelle instruction \"AFFICHERCALCUL*\" permettant d'afficher le résultat d'un calcul à l'utilisateur, avec un retour à la ligne."
   },
   "Instruction \"LIRE\" dans une variable": {
     "prefix": "Lire Var",
     "body": ["LIRE ${1:nomVariable}"],
-    "description": "Insert une nouvelle instruction \"LIRE\" permettant de récupérer, dans une variable, une valeur saisie par l'utilisateur."
+    "description": "Insère une nouvelle instruction \"LIRE\" permettant de récupérer, dans une variable, une valeur saisie par l'utilisateur."
   }
 }

@@ -13,29 +13,29 @@
       "\t$0",
       "FIN"
     ],
-    "description": "Insert un nouveau bloc d'algorithme."
+    "description": "Insère un nouveau bloc d'algorithme."
   },
   "Bloc \"VARIABLES\"": {
     "prefix": "Variables",
     "body": ["VARIABLES", "\t$0"],
-    "description": "Insert un bloc de déclaration de variables."
+    "description": "Insère un bloc de déclaration de variables."
   },
   "Déclaration de variable": {
     "prefix": "Var",
     "body": ["${1:nomVariable} en ${2|Caractères,Entiers,Réels,Booléens|}"],
-    "description": "Insert une nouvelle déclaration de variable."
+    "description": "Insère une nouvelle déclaration de variable."
   },
   "Déclaration de tableau": {
     "prefix": "Tableau",
     "body": [
       "TABLEAU ${1:nomTableau}[${2:Taille}] en ${3|Caractères,Entiers,Réels,Booléens|}"
     ],
-    "description": "Insert une nouvelle déclaration de tableau."
+    "description": "Insère une nouvelle déclaration de tableau."
   },
   "Bloc \"DÉBUT/FIN\"": {
     "prefix": ["Début", "Debut"],
     "body": ["DÉBUT", "\t// Votre algorithme ici ! 🤓", "\t$0", "FIN"],
-    "description": "Insert un nouveau bloc \"DÉBUT/FIN\" qui correspond au corps de l'algorithme."
+    "description": "Insère un nouveau bloc \"DÉBUT/FIN\" qui correspond au corps de l'algorithme."
   },
   "Boucle \"Pour\" avec pas": {
     "prefix": "Pour avec pas",
@@ -46,7 +46,7 @@
       "\t$0",
       "$1 Suivant"
     ],
-    "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre en définissant la valeur du pas."
+    "description": "Insère une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre en définissant la valeur du pas."
   },
   "Boucle \"Pour\"": {
     "prefix": "Pour",
@@ -56,12 +56,12 @@
       "\t$0",
       "$1 Suivant"
     ],
-    "description": "Insert une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre sans définir la valeur du pas (valeur de 1 par défaut)."
+    "description": "Insère une nouvelle boucle \"Pour\" permettant d'itérer d'une valeur à une autre sans définir la valeur du pas (valeur de 1 par défaut)."
   },
   "Valeur de pas \"Pour\"": {
     "prefix": "Par pas",
     "body": ["ParPasDe ${1:valeurDePas}"],
-    "description": "Insert une instruction permettant de définir la valeur du pas d'une boucle \"Pour\"."
+    "description": "Insère une instruction permettant de définir la valeur du pas d'une boucle \"Pour\"."
   },
   "Conditionnelle simple": {
     "prefix": "Si",
@@ -71,7 +71,7 @@
       "\t$0",
       "FinSi"
     ],
-    "description": "Insert un nouveau bloc conditionnel \"Si\", sans alternative \"Sinon\"."
+    "description": "Insère un nouveau bloc conditionnel \"Si\", sans alternative \"Sinon\"."
   },
   "Conditionnelle complète": {
     "prefix": "Si ... Sinon",
@@ -84,7 +84,7 @@
       "\t$0",
       "FinSi"
     ],
-    "description": "Insert un nouveau bloc conditionnel complet \"Si\" avec son alternative \"Sinon\"."
+    "description": "Insère un nouveau bloc conditionnel complet \"Si\" avec son alternative \"Sinon\"."
   },
   "Alternative \"SinonSi\"": {
     "prefix": "SinonSi",
@@ -93,31 +93,31 @@
       "\t// Instructions si la condition \"${1:condition}\" est vérifiée.",
       "\t$0"
     ],
-    "description": "Insert un bloc conditionnel alternatif \"SinonSi\"."
+    "description": "Insère un bloc conditionnel alternatif \"SinonSi\"."
   },
   "Alternative \"Sinon\"": {
     "prefix": "Sinon",
     "body": ["Sinon", "\t// Instructions dans tous les autres cas.", "\t$0"],
-    "description": "Insert un bloc conditionnel alternatif \"Sinon\"."
+    "description": "Insère un bloc conditionnel alternatif \"Sinon\"."
   },
   "Instruction \"Écrire\"": {
     "prefix": ["Écrire", "Ecrire"],
     "body": ["Écrire \"${1:chaîne de caractères}\""],
-    "description": "Insert une nouvelle instruction \"Écrire\" permettant d'afficher un message à l'utilisateur."
+    "description": "Insère une nouvelle instruction \"Écrire\" permettant d'afficher un message à l'utilisateur."
   },
   "Instruction \"Lire\" dans une variable": {
     "prefix": "Lire Var",
     "body": ["Lire ${1:nomVariable}"],
-    "description": "Insert une nouvelle instruction \"Lire\" permettant de récupérer, dans une variable, une valeur saisie par l'utilisateur."
+    "description": "Insère une nouvelle instruction \"Lire\" permettant de récupérer, dans une variable, une valeur saisie par l'utilisateur."
   },
   "Instruction \"Lire\" dans un tableau": {
     "prefix": "Lire Tab",
     "body": ["Lire ${1:nomTableau}[${2|indice,0,1,2,3,4,5,6,7,8,9,10,...|}]"],
-    "description": "Insert une nouvelle instruction \"Lire\" permettant de récupérer, dans un tableau à l'indice précisé entre \"[]\", une valeur saisie par l'utilisateur."
+    "description": "Insère une nouvelle instruction \"Lire\" permettant de récupérer, dans un tableau à l'indice précisé entre \"[]\", une valeur saisie par l'utilisateur."
   },
   "Instruction \"Redim\"": {
     "prefix": "Redim",
     "body": ["Redim ${1:nomTableau}[${2:Taille}]"],
-    "description": "Insert une nouvelle instruction \"Redim\" permettant de redimensionner un tableau en précisant sa nouvelle taille."
+    "description": "Insère une nouvelle instruction \"Redim\" permettant de redimensionner un tableau en précisant sa nouvelle taille."
   }
 }
