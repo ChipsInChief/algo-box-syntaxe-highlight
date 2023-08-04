@@ -65,7 +65,7 @@ Ou sélectionnez le langage directement depuis un fichier ouvert :
 Vous pouvez démarrer un nouveau fichier `AlgoBox` en utilisant le modèle disponible.
 Pour ce faire, créez un nouveau fichier et sélectionnez `remplissez avec un modèle` puis `AlgoBox`.
 
-![Modèle de fichier `AlgoBox`](images/documentation/algobox/02-snippet.gif)
+![Modèle de fichier `AlgoBox`](images/documentation/algobox/02-modele-fichier.gif)
 
 #### Extraits de code `AlgoBox`
 
