@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "publisher": "ChipsInChief",
   "license": "MIT",
-  "icon": "images/icon.png",
+  "icon": "images/icons/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/ChipsInChief/algo-box-syntaxe-highlight"
@@ -24,6 +24,14 @@
     "Programming Languages",
     "Snippets"
   ],
+  "keywords": [
+    "algo",
+    "algorithme",
+    "algorithmique",
+    "pseudo-code",
+    "pseudo code",
+    "algobox"
+  ],
   "contributes": {
     "languages": [
       {
@@ -39,7 +47,11 @@
         "extensions": [
           ".algo"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./images/icons/algo-light.png",
+          "dark": "./images/icons/algo-dark.svg"
+        }
       },
       {
         "id": "algobox",
@@ -50,7 +62,11 @@
         "extensions": [
           ".algob"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./images/icons/algo-light.png",
+          "dark": "./images/icons/algo-dark.png"
+        }
       }
     ],
     "grammars": [
