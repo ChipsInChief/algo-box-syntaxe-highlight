@@ -79,12 +79,18 @@ Tapez simplement le début des instructions `AlgoBox` pour qu'une sélection des
 
 ## Attributions 📚
 
-Syntaxe basée sur :
+### Références
 
 * [Cours d'algorithmique](http://cours.pise.info/algo/index.htm) de Christophe DARMANGEAT
 * [Algobox](https://www.xm1math.net/algobox)
 
-Extension inspirée de :
+### Inspirations
 
 * [algo](https://marketplace.visualstudio.com/items?itemName=jponcy.algo-tact) de [jponcy](https://marketplace.visualstudio.com/publishers/jponcy)
 * [Pic Algo](https://marketplace.visualstudio.com/items?itemName=PierrickDelrieu.pic-algo) de [Pierrick Delrieu](https://marketplace.visualstudio.com/publishers/PierrickDelrieu)
+
+### Iconographie
+
+Icônes | Utilisation | Référence
+---------|----------|---------
+ ![Icône thème dark](images/icons/algo-dark.png) ![Icône thème light](images/icons/algo-light.png) | Icône pour les types de fichier `.algo` et `.algobox` | [Pictogrammers](https://github.com/Templarian/MaterialDesign)
