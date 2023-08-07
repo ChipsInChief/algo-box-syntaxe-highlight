@@ -49,7 +49,7 @@
         ],
         "configuration": "./language-configuration.json",
         "icon": {
-          "light": "./images/icons/algo-light.png",
+          "light": "./images/icons/algo-light.svg",
           "dark": "./images/icons/algo-dark.svg"
         }
       },
@@ -60,12 +60,12 @@
           "algobox"
         ],
         "extensions": [
-          ".algob"
+          ".algobox"
         ],
         "configuration": "./language-configuration.json",
         "icon": {
-          "light": "./images/icons/algo-light.png",
-          "dark": "./images/icons/algo-dark.png"
+          "light": "./images/icons/algo-light.svg",
+          "dark": "./images/icons/algo-dark.svg"
         }
       }
     ],
