@@ -7,5 +7,5 @@ vsc-extension-quickstart.md
 # Fichiers ressources pour définir ce qu'il reste à faire
 todos/**
 algobox-ressources/**
-images/documentation/*/hd/**
+images/documentation/**/*.mp4
 images/icon-base.png
