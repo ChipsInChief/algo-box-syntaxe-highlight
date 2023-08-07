@@ -4,6 +4,19 @@
   "description": "Coloration syntaxique pour pseudo-code algorithmique (🇫🇷) compatible avec Algobox.",
   "version": "0.0.1",
   "publisher": "ChipsInChief",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChipsInChief/algo-box-syntaxe-highlight"
+  },
+  "bugs": {
+    "url": "https://github.com/ChipsInChief/algo-box-syntaxe-highlight/issues"
+  },
+  "galleryBanner": {
+    "color": "#107FA1",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
