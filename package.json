@@ -1,9 +1,22 @@
 {
   "name": "algo-box-syntax-highlighter",
   "displayName": "Algo{box} Syntax Highlighter 🖍",
-  "description": "Coloration syntaxique pour pseudo-code algorithmique (🇫🇷) compatible avec Algobox (https://www.xm1math.net/algobox)",
+  "description": "Coloration syntaxique pour pseudo-code algorithmique (🇫🇷) compatible avec Algobox.",
   "version": "0.0.1",
   "publisher": "ChipsInChief",
+  "license": "MIT",
+  "icon": "images/icons/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChipsInChief/algo-box-syntaxe-highlight"
+  },
+  "bugs": {
+    "url": "https://github.com/ChipsInChief/algo-box-syntaxe-highlight/issues"
+  },
+  "galleryBanner": {
+    "color": "#107FA1",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -11,13 +24,21 @@
     "Programming Languages",
     "Snippets"
   ],
+  "keywords": [
+    "algo",
+    "algorithme",
+    "algorithmique",
+    "pseudo-code",
+    "pseudo code",
+    "algobox"
+  ],
   "icon": "images/icon.png",
   "contributes": {
     "languages": [
       {
         "id": "algo",
         "aliases": [
-          "Algo",
+          "Algo ~ 🇫🇷",
           "algo",
           "algorithme",
           "algorithmique",
@@ -27,18 +48,26 @@
         "extensions": [
           ".algo"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./images/icons/algo-light.svg",
+          "dark": "./images/icons/algo-dark.svg"
+        }
       },
       {
         "id": "algobox",
         "aliases": [
-          "AlgoBox",
+          "AlgoBox ~ 🇫🇷",
           "algobox"
         ],
         "extensions": [
-          ".algob"
+          ".algobox"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./images/icons/algo-light.svg",
+          "dark": "./images/icons/algo-dark.svg"
+        }
       }
     ],
     "grammars": [

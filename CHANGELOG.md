@@ -1,9 +1,7 @@
 # Change Log
 
-All notable changes to the "algo-box-syntaxe-highlight" extension will be documented in this file.
+Tous les changements apportés à l'extension `algo-box-syntaxe-highlight` seront documentés dans ce fichier.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## v1.0.0
 
-## [Unreleased]
-
-- Initial release
+- Initial release 🚀
