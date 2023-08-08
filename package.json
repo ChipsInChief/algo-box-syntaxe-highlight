@@ -32,6 +32,7 @@
     "pseudo code",
     "algobox"
   ],
+  "icon": "images/icon.png",
   "contributes": {
     "languages": [
       {
