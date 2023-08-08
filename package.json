@@ -2,7 +2,7 @@
   "name": "algo-box-syntax-highlighter",
   "displayName": "Algo{box} Syntax Highlighter 🖍",
   "description": "Coloration syntaxique pour pseudo-code algorithmique (🇫🇷) compatible avec Algobox.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "ChipsInChief",
   "license": "MIT",
   "icon": "images/icons/icon.png",
